@@ -1,0 +1,17 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+android {
+    compileSdk 34
+    defaultConfig {
+        applicationId "com.nachinbombin.midimanipulator"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+    externalNativeBuild {
+        cmake { path "src/main/cpp/CMakeLists.txt" }
+    }
+}
